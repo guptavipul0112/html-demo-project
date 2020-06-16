@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Forget Password</title>
+<style>
+h1{position: absolute; top:20%; left:44%; color:magenta;}
+#l1{color:black; font-size:20px}
+#l2{color:black; font-size:20px}
+#b2{height: 35px; width: 100px}
+.login-box
+{
+width: 260px;
+height: 300px;
+background: rgba(0,0,0,0.1);
+color: #F5F3EA;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+box-sizing: border-box;
+box-shadow: 10px 10px 7px #888888;
+}
+.centered
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<h1>Reset Password</h1>
+<div class="container">
+<div class="login-box">
+<div class="centered">
+<form>
+<label id="l1" for="reset">Mobile No.: </label>
+<br>
+<input type="number" name="reset" maxlength="11" placeholder="Enter Mobile No." required>
+<br><br>
+<label id="l2" for="new">New Password.: </label>
+<br>
+<input type="password" name="new" maxlength=15 placeholder="Enter New Pass" required>
+<br> 
+<br>&nbsp; &nbsp; &nbsp; &nbsp;
+<button id="b2" type="submit" value="submit">Reset Password</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Form</title>
+<style>
+.centered
+{
+     position: absolute;
+	 top: 5%;
+     left: 15%;
+     transform: translate(-50%. -50%);
+}
+.login-box
+{
+     width: 300px;
+	 height: 500px;
+	 background: rgba(0,0,0,0.7);
+	 color: #F5F3EA;
+	 top: 30%;
+	 left: 30%;
+	 position: absolute;
+	 transform: translate(-50%,-50%);
+	 box-sizing: border-box; 
+     box-shadow: 10px 10px 7px #888888;
+}
+</style>
+</head>
+<body bgcolor="cyan" text="white">
+<div class="container">
+<div class="login-box">
+<div class="centered">
+<form name="Data">
+<label id="l1" for="name">Name: </label>
+<input type="text" name="name" maxlength=30 placeholder="Enter your Name">
+<br><br>
+<label id="l2" for="fname">Father's Name: </label>
+<input type="text" name="fname" maxlength=25 placeholder="Enter Fathers name">
+<br><br>
+<label id="l6" for="mail">Email: </label>
+<input type="email" name="mail" placeholder="Enter Email ID">
+<br><br>
+<label id="l3" for="ssc">10th Marks: </label>
+<input type="number" name="ssc" placeholder="Enter SSC Marks" maxlength=3>
+<br><br>
+<label id="u1" for="upload1">Upload 10th Marksheet: </label>
+<input type="file" name="upload1">
+<br><br>
+<label id="l4" for="hsc">12th Marks: </label>
+<input type="number" name="hsc" placeholder="Enter HSC Marks" maxlength=3>
+<br><br>
+<label id="l5" for="upload2">Upload 12th Marksheet: </label>
+<input type="file" name="upload2">
+</form>
+</div>
+</div>
+</div>
+</html>
