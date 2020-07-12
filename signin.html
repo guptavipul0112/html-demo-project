@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Sign In</title>
+<style>
+    #l1{font-size:20px}
+    #l2{font-size:20px}
+    #l3{position: relative; left: 35%; font-size:15px}
+    #btn1{left:20%; height:30px; width:100px; position: absolute; background: #5959f5;border-radius: 15px}
+    .text
+    {
+        color:white;
+        font-weight: 500;
+        font-family: Old English Text MT;
+        font-size: 45px;
+        position: absolute;
+        left: 45%;
+        top: 18%;
+    }
+    .login-box
+    {
+        height: 300px;
+        width: 250px;
+        background: rgba(48, 43, 116, 0.527);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 2px 2px 5px #030303;
+        border-radius:20px;
+    }
+    .centered
+    {
+        left: 20%;
+        top: 10%;
+        position: absolute;
+    }
+</style>
+</head>
+<body background="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" text="white">
+    <div class="text">Sign In...</div>
+    <div class="container">
+        <div class="login-box">
+            <div class="centered">
+                <form action="authentication.php" method="POST">
+                    <label id="l1">Username</label>
+                    <br>
+                    <input type="username" name="uname" maxlength=30 placeholder="Enter Username" required>
+                    <br><br>
+
+                    <label id="l2">Password</label>
+                    <br>
+                    <input type="password" name="pass" maxlength=15 placeholder="Enter Password" required>
+                    <br>
+                    <label id="l3"><input type="checkbox" checked name="remember"> Remember me</label>
+                    <br><br>
+                    <button id="btn1" type="submit" value="submit">Sign In</button>
+                    <br>
+                    <p><a style="color: #02baf2" href="forget pass.html">Forget Password?</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
