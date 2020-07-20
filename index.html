@@ -46,7 +46,8 @@
 	   <br><br>
 	   <label id="l2" for="pass">Password: </label>
 	   <br>
-	   <input type="password" name="pass" maxlength=15 placeholder="Enter Password" required>
+	   <input type="password" name="pass" maxlength=15 placeholder="Enter Password" id="onclickchange" required>
+	   <input type="checkbox" name="check" onclick="myfunction()">
 	   <br><br>
 	   <label id="l4" for="moblie">Mobile No.: </label>
 	   <br>
@@ -62,5 +63,19 @@
 	   </div>
     </div>	
 </form>	
+<script language="Javascript">
+    function myfunction()
+        {
+            var x = document.getElementById("onclickchange");
+            if(x.type=="password")
+            {
+                x.type="text";
+            }
+            else
+            {
+                x.type="password";
+            }
+        }
+</script>
 </body> 
 </html>
